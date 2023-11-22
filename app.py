@@ -33,3 +33,18 @@ best_features = k_best_features_final.keys()
 print ('')
 print ("Melhores features:")
 print (k_best_features_final)
+
+#15:41
+
+features = num_data.drop(['Res','game_id','home_id','Away_id', 'AG','PD','PH'],1)
+
+#separa as labels para treinamento
+labels = num_data['Res']
+
+print('Features')
+print (features.head())
+
+print ('=========')
+
+print ('Labels')
+print (labels.head())
