@@ -48,3 +48,15 @@ print ('=========')
 
 print ('Labels')
 print (labels.head())
+
+# 15:53
+
+X_train = features_scale[:1932]
+X_test = features_scale[1932:2155]
+y_train = labels[:1932]
+y_test = labels[1932:2155]
+
+print( len(X_train), len(y_train))
+
+print( len(X_test), len(y_test))
+
