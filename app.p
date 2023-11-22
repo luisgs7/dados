@@ -13,3 +13,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.preprocessing import scale
 %matplotlib inline
+
+
+num_data = data.drop(['Country','League','Season','Date','Time','Home','Away'],1)
+
+display(num_data.head())
