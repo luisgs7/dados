@@ -60,3 +60,18 @@ print( len(X_train), len(y_train))
 
 print( len(X_test), len(y_test))
 
+# 16:41
+previsao=features_scale[2155:]
+
+game_id_full=data['game_id']
+game_id=game_id_full[2155:]
+
+res_full=data['Res']
+res=res_full[2155:]
+
+
+pred=clf_LR.predict(previsao)
+
+df=pd.DataFrame({'real': res, 'previsao':pred, 'game_id':game_id})
+
+print(df.head(20))
